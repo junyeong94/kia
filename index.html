@@ -1,23 +1,268 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>기아자동차 - The Power to Surprise | 기아자동차 공식 사이트</title>
-    <!-- 메타 -->
-    <meta name="author" content="Park">
-    <meta name="description" content="기아자동차 웹사이트">
-    <meta name="keywords" content="KIA,기아,자동차,car,korea">
-    <meta property="og:title" content="기아자동차">
-    <meta property="og:url" content="https://junyeong94.github.io/kia">
-    <meta property="og:image" content="images/logo.webp">
-    <meta property="og:description" content="기아자동차 웹사이트">
-    <!-- 파비콘 -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/css/swiper.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가이자동차 - The Power to Surprise | 기아자동차 공식 사이트</title>
+  <meta name="author" content="hong">
+  <meta name="description" content="기아자동차 웹사이트">
+  <meta name="keywords" content="기아, 자동차, kia, car, korea">
+  <meta property="og:title" content="기아자동차">
+  <meta property="og:url" content="https://pam7462.github.io/kia">
+  <meta property="og:image" content="images/logo.webp">
+  <meta property="og:description" content="기아자동차 웹사이트">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/css/swiper.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.0/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js"></script>
 </head>
 <body>
-    
+  <section class="wrap">
+    <section class="skip_menu">
+      <a href="#content">본문 바로가기</a>
+    </section>
+    <header class="header">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="images/logo.webp" alt="logo">
+        </a>
+        <ul id="tgl_nav_btn">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </h1>
+      <nav class="nav">
+        <article class="article small_nav">
+          <div class="content">
+            <ul>
+              <li><a href="#">기아소식</a></li>
+              <li><a href="#">IR</a></li>
+              <li><a href="#">UVO</a></li>
+              <li><a href="#">WORLDWIDE</a></li>
+              <li><a href="#">EN</a></li>
+            </ul>
+            <ul>
+              <li><a href="login.html">로그인</a></li>
+              <li><a href="#">회원가입</a></li>
+              <li><a href="#">마이기아</a></li>
+              <li class="search"></li>
+            </ul>
+          </div>
+        </article>
+        <article class="article large_nav">
+          <div class="content">
+            <ul>
+              <li id="nav_list01">
+                <a class="nav_btn" href="#nav_list01" id="car_show">차량</a>
+                <ul class="car_list content">
+                  <li>
+                    <p>
+                      <input type="radio" name="car" id="car_all">
+                      <label for="car_all">
+                        전체
+                      </label>
+                    </p>
+                    <p>
+                      <input type="radio" name="car" id="car_people">
+                      <label for="car_people">
+                        승용
+                      </label>
+                    </p>
+                    <p>
+                      <input type="radio" name="car" id="car_nature">
+                      <label for="car_nature">
+                        친환경
+                      </label>
+                    </p>
+                    <p>
+                      <input type="radio" name="car" id="car_rv">
+                      <label for="car_rv">
+                        RV
+                      </label>
+                    </p>
+                    <p>
+                      <input type="radio" name="car" id="car_other">
+                      <label for="car_other">
+                        상용/택시/버스
+                      </label>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      <img src="images/car01.webp" alt="car01">
+                      <span>모닝</span>
+                    </p>
+                    <p>
+                      <img src="images/car02.webp" alt="car02">
+                      <span>레이</span>
+                    </p>
+                    <p>
+                      <img src="images/car03.png" alt="car03">
+                      <span>K3</span>
+                    </p>
+                    <p>
+                      <img src="images/car04.webp" alt="car03">
+                      <span>K3 하이브리드</span>
+                    </p>
+                    <p>
+                      <img src="images/car05.webp" alt="car05">
+                      <span>K5</span>
+                    </p>
+                    <p>
+                      <img src="images/car06.webp" alt="car06">
+                      <span>K5 하이브리드</span>
+                    </p>
+                    <p>
+                      <img src="images/car07.webp" alt="car07">
+                      <span>K7</span>
+                    </p>
+                    <p>
+                      <img src="images/car08.webp" alt="car08">
+                      <span>K7 하이브리드</span>
+                    </p>
+                    <p>
+                      <img src="images/car09.png" alt="car09">
+                      <span>스팅어</span>
+                    </p>
+                    <p>
+                      <img src="images/car10.webp" alt="car10">
+                      <span>더 K9</span>
+                    </p>
+                    <p>
+                      <img src="images/car11.png" alt="car11">
+                      <span>스토닉</span>
+                    </p>
+                    <p>
+                      <img src="images/car12.webp" alt="car12">
+                      <span>소울</span>
+                    </p>
+                    <p>
+                      <img src="images/car13.webp" alt="car13">
+                      <span>소울 EV</span>
+                    </p>
+                    <p>
+                      <img src="images/car14.webp" alt="car14">
+                      <span>니로</span>
+                    </p>
+                    <p>
+                      <img src="images/car15.webp" alt="car015">
+                      <span>니로 하이브리드</span>
+                    </p>
+                    <p>
+                      <img src="images/car16.webp" alt="car16">
+                      <span>니로 EV</span>
+                    </p>
+                    <p>
+                      <img src="images/car17.webp" alt="car17">
+                      <span>셀토스</span>
+                    </p>
+                    <p>
+                      <img src="images/car18.png" alt="car18">
+                      <span>스토티지</span>
+                    </p>
+                    <p>
+                      <img src="images/car19.webp" alt="car19">
+                      <span>소렌토</span>
+                    </p>
+                    <p>
+                      <img src="images/car20.webp" alt="car20">
+                      <span>모하비</span>
+                    </p>
+                    <p>
+                      <img src="images/car21.webp" alt="car21">
+                      <span>카니발</span>
+                    </p>
+                    <p>
+                      <img src="images/car22.webp" alt="car22">
+                      <span>카니발 하이리무진</span>
+                    </p>
+                    <p>
+                      <img src="images/car23.webp" alt="car23">
+                      <span>카니발 아웃도어</span>
+                    </p>
+                    <p>
+                      <img src="images/car24.webp" alt="car24">
+                      <span>K5 택시</span>
+                    </p>
+                    <p>
+                      <img src="images/car25.webp" alt="car25">
+                      <span>K7 택시</span>
+                    </p>
+                    <p>
+                      <img src="images/car26.webp" alt="car26">
+                      <span>봉고3</span>
+                    </p>
+                    <p>
+                      <img src="images/car27.webp" alt="car27">
+                      <span>봉고3 EV</span>
+                    </p>
+                    <p>
+                      <img src="images/car28.webp" alt="car28">
+                      <span>탑차</span>
+                    </p>
+                    <p>
+                      <img src="images/car29.png" alt="car29">
+                      <span>건설</span>
+                    </p>
+                    <p>
+                      <img src="images/car30.webp" alt="car30">
+                      <span>성력</span>
+                    </p>
+                    <p>
+                      <img src="images/car31.webp" alt="car31">
+                      <span>수송</span>
+                    </p>
+                  </li>
+                </ul>
+              </li>
+              <li id="nav_list02">
+                <a class="nav_btn" href="#nav_list02">구매정보</a>
+                <ul class="sub_nav content">
+                  <li><a href="#">온라인견적</a></li>
+                  <li><a href="#">상품추천</a></li>
+                  <li><a href="#">경쟁차비교</a></li>
+                  <li><a href="#">카탈로그/가격표 다운로드</a></li>
+                  <li><a href="#">이달의구매혜택</a></li>
+                  <li><a href="#">영업망안내</a></li>
+                  <li><a href="#">구매상담신청</a></li>
+                  <li><a href="#">구매가이드</a></li>
+                  <li><a href="#">친환경 전기차 구매가이드</a></li>
+                  <li><a href="#">기아렌터카 +</a></li>
+                  <li><a href="#">기아플렉스</a></li>
+                </ul>
+              </li>
+              <li id="nav_list03">
+                <a class="nav_btn" href="#nav_list03">체험센터</a>
+                <ul class="sub_nav content">
+                  <li><a href="#">시승예약서비스</a></li>
+                  <li><a href="#">전시차 조회</a></li>
+                  <li><a href="#">사업장 안내</a></li>
+                </ul>
+              </li>
+              <li id="nav_list04">
+                <a class="nav_btn" href="#nav_list04">이벤트</a>
+                <ul class="sub_nav content">
+                  <li><a href="#">진행중인 이벤트</a></li>
+                  <li><a href="#">종료 이벤트</a></li>
+                  <li><a href="#">당첨자 발표</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li><a href="#">PLAY KIA</a></li>
+              <li><a href="#">레드멤버스</a></li>
+              <li><a href="#">기업문화홍보</a></li>
+              <li><a href="#">인재체용</a></li>
+              <li><a href="#">고객센터</a></li>
+            </ul>
+          </div>
+        </article>
+      </nav>
+    </header>
+  </section>
 </body>
 </html>

@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+html,body,a,section,article,footer,aside,div,h1,h2,h3,h4,h5,h6,span,p,form,
+input,button,select,textarea,ul,ol,li,label,header,img,video,audio,
+figure,span,figcaption,strong,i,u,hr{margin:0;border:none;padding:0;
+box-sizing: border-box;color:black;font-size:14px;background-color:transparent;}
+a{text-decoration:none; outline:none;}
+img{vertical-align:top;}
+ul,ol,li{list-style:none;}
+input,select,button,textarea{outline:none;}
