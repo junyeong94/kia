@@ -140,4 +140,31 @@ var mySwiper4 = new Swiper ('.channel_kia_slider', {
     prevEl: '.swiper-button-prev',
   },
 });
-})
+// 기아 뉴스 슬라이더
+var mySwiper5 = new Swiper ('.kia_news_slider', {
+  speed:300,
+  spaceBetween:10,
+  slidesPerView:2.5,
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type:'bullets',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+$('#footer_tgl_btn').click(function(){
+  $('#footer_tgl_btn>ul').toggleClass('active');
+});
+$('#footer_tgl_btn>ul>li').click(function(){
+  var selectValue=$(this).children('a').text();
+  var selectParent=$(this).parent('ul').prev();
+  selectParent.text(selectValue);
+});
+});

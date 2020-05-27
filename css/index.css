@@ -12,7 +12,6 @@ body{
 h2,h2>span{font-size:xx-large;font-weight:bolder; text-align: center;}
 h3{font-size:x-large;}
 
-.wrap{margin-bottom:300px;}
 section section{padding:50px 0;}
 .content{
   width:93.75%;
@@ -51,7 +50,6 @@ h1 #tgl_nav_btn.active li:nth-child(1){transform: rotate(45deg); }
 h1 #tgl_nav_btn.active li:nth-child(2){background-color: transparent;}
 h1 #tgl_nav_btn.active li:nth-child(3){transform: rotate(-47deg);}
 .nav{display: flex; flex-flow:column nowrap;}
-.nav .article{}
 .header a{
   color:rgba(255,255,255,0.5);
 }
@@ -259,7 +257,6 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform: rotate(-47deg);}
 .main_banner{padding-top:0;}
 .main_box{position: relative;}
 .main_slider_img{display:flex; justify-content: center; align-items:center}
-.main_slider_img>img{}
 .main_slider_txt{position: absolute;left:0%;top:0%; 
   display: flex; flex-flow:column nowrap; justify-content:space-evenly; align-items: center;width:100%;padding-top: 20px;}
 .main_slider_txt>h2{margin:20px 0; text-align: center;
@@ -308,7 +305,7 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform: rotate(-47deg);}
 .best_kia{margin:150px 0 0;}
 .best_kia>.best_kia_slider{padding-bottom:40px;}
 .best_kia>h2{padding-bottom:50px;}
-.best_kia>h2>span,.channel_kia>h2>span,.event_kia>h2>span{color:#d70f26;font-weight: bold;}
+.best_kia>h2>span,.channel_kia>h2>span,.event_kia>h2>span,.you_tube>h2>span{color:#d70f26;font-weight: bold;}
 .best_kia_slider_img>img{width:110%;}
 .best_kia_txt{text-align:center;}
 .best_kia_txt>h3{font-weight:500;font-size:x-large; text-align: center;}
@@ -326,7 +323,7 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform: rotate(-47deg);}
 .best_kia .swiper-slide img{transition: 0.5s; opacity:0.5;}
 .best_kia .swiper-slide-active img{transform:scale(1.2); opacity:1;}
 .best_kia .swiper-slide-prev img,.best_kia .swiper-slide-next img{opacity:1;}
-.best_kia .swiper-slide-prev img:hover,.swiper-slide-next img:hover{transform:scale(1.05) ; }
+.best_kia .swiper-slide-prev img:hover,.best_kia .swiper-slide-next img:hover{transform:scale(1.05) ; }
 .event_kia>h2,.channel_kia>h2{text-align:left;}
 .wrap>.event_channel{padding-left:7%; padding-right:3%;display:flex; flex-flow:row nowrap; justify-content:space-between;}
 .event_channel h3{padding:20px 0}
@@ -349,11 +346,87 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform: rotate(-47deg);}
   1px -1px 0 0 #333,0px 1px 0 0 #333,-1px 1px 0 0 #333;}
 
 
-.you_tube{padding:0 5%;display: flex; flex-flow:row wrap; justify-content:space-between;}
+.you_tube{display: flex; flex-flow:row wrap; justify-content:flex-end; position: relative;}
 .you_tube>h2{width:100%; text-align:left;}
-.you_tube>.you_tube_link{width:62.5%; height: 30vw;}
+.you_tube>.you_tube_link{position: absolute; left:0; top:90px; z-index:10;;width:72.6%; height:40.7vw;}
 .you_tube>.you_tube_link>iframe{width:100%; height:100%;}
-.you_tube>.you_tube_txt{width:32%;}
+.you_tube>.you_tube_txt{width:100%;height:40vw;margin-top: 50px;padding:5% 0 5% 76%; background-color: #eee;} 
+.you_tube>.you_tube_txt>h3{margin-bottom: 20px; border:1px solid rgba(0,0,0,0.2); padding-bottom: 20px;}
+.you_tube>.you_tube_txt>p>span{font-weight:bold;}
+
+.news_notice{display:flex; flex-flow:row wrap;}
+.news_notice>.kia_news{width:60%; padding:0 20px;}
+.kia_news_slider img{width:100%;}
+.kia_news_slider .swiper-pagination{top:-15px; bottom:auto; padding:20px; text-align: right;}
+.kia_news_slider .swiper-pagination .swiper-pagination-bullet{background-color:#999; margin: 0 4px !important;}
+.kia_news_slider .swiper-pagination .swiper-pagination-bullet-active{background-color:#d70f26;}
+.kia_news_slider .swiper-button-prev,
+.kia_news_slider .swiper-button-next{display:none;}
+.kia_news_slider:hover .swiper-button-prev,
+.kia_news_slider:hover .swiper-button-next{display:block;}
+.kia_news_slider p{padding:20px 0 8px}
+.kia_news_slider a{font-size: large;}
+.kia_news_slider .swiper-duplicate-slide-prev .kia_news_txt{visibility:hidden;}
+.news_notice>.notice{width:40%; padding:0 20px;}
+.notice_txt{display: flex; flex-flow:row wrap;}
+.notice_txt>li{width:50%; border:1px solid rgba(0,0,0,0.2); padding:20px; transition: 0.3s; cursor: pointer;}
+.notice_txt>li:hover{background-color:#d70f26;}
+.notice_txt>li:nth-child(2n+1){border-right:none;}
+.notice_txt>li:nth-child(1),
+.notice_txt>li:nth-child(2){border-bottom:none;}
+.notice_txt>li>h4{font-weight: normal; padding-bottom: 30px;}
+
+
+.footer{background-color: #333;}
+.footer,.footer div,.footer p,.footer a,.footer span,.footer h5{ color:#fff; font-size: small;}
+.footer_top{display:flex; flex-flow:row nowrap; justify-content: space-between; align-items:center;
+  height:60px; border-bottom:1px solid rgba(255,255,255,0.2);}
+.footer_top_left{margin-left:10px;}
+.footer_top_left,.footer_top_right{display:flex; flex-flow:row nowrap; justify-content:flex-start;}
+.footer_top_left p{text-indent:-99999px; width:44px;height:44px; margin-right:10px; background-image:url('../images/iconset02.webp'); cursor: pointer;}
+.footer_top_left p:nth-child(2){background-position-x:-45px;}
+.footer_top_left p:nth-child(3){background-position-x:-89px;}
+.footer_top_left p:nth-child(4){background-position-x:-176px;}
+.footer_top_left p:nth-child(5){background-position-x:-220px;}
+.footer_top_left p:nth-child(6){background-position-x:-264px;}
+
+.footer_top_right div{height:44px;line-height:44px;}
+.footer_top_right div:nth-child(1){margin-right:16px;}
+.footer_top_right div:nth-child(2){margin-right:30px;}
+.footer_top_right div:nth-child(3){position: relative;border: 1px solid #fff;width:200px;text-align:center; cursor: pointer;margin-right:10px;}
+.footer_top_right div:nth-child(3)>span{ font-size: large;}
+.footer_top_right div:nth-child(3)::after{content:'^'; display:block; font-size:xx-large; font-weight:100;position: absolute; top:10px; right:10px;}
+.footer_top_right div img{vertical-align:middle;}
+#footer_tgl_btn>ul{position: absolute; left:-1px; top:0; z-index:10; width:200px;height:0;transform: translateY(-100%);background-color:#333;
+border:none; overflow-x: hidden;overflow-y: scroll; transition:0.3s;}
+#footer_tgl_btn>ul.active{border:1px solid #fff; height:200px;}
+#footer_tgl_btn>ul>li{text-align:center;}
+#footer_tgl_btn>ul>li>a:hover{text-decoration:underline;}
+
+.footer_middle{display: flex; flex-flow:row nowrap; padding:30px 0}
+.footer_middle_left{display:flex; flex:4.5;}
+.footer_middle_right{flex:5.5;}
+.footer h5{font-size:medium; padding-bottom:15px;}
+.service>ul{display:flex; justify-content:flex-start;}
+.service>ul>li{padding:0 10px;border-right:1px solid rgba(255,255,255,0.2);}
+.service>ul>li>a{color:rgba(255,255,255,0.7); font-size:smaller}
+.service>ul>li:first-child{padding-left:0;}
+.service>ul>li:last-child{border-right:none;}
+.info{flex:1;}
+.service{flex:1; padding-left: 10px;}
+.info>p{line-height:20px; color:rgba(255,255,255,0.5); font-size:12px;}
+.award>ul{display:flex; flex-flow:row wrap;}
+.award>ul>li>img{margin-right:10px;}
+.award>ul>li{width:50%; padding-bottom:10px; display: flex; flex-flow:row nowrap;  align-items:center;}
+.award p{font-size: smaller; color:rgba(255,255,255,0.5);}
+
+
+.footer_bottom{display:flex; padding:0 0 10px 10px;}
+.footer_bottom_left{padding-right:50px ;order:1;}
+.footer_bottom_right{order:2; display: flex; flex-flow: row nowrap;}
+.footer_bottom_right>p{padding:0 20px; border-right:1px solid rgba(255,255,255,0.5);}
+.footer_bottom_right>p>a{color:rgba(255,255,255,0.5); font-size:12px;}
+.footer_bottom_right>p>a:hover{text-decoration:underline;}
 
 
 @media (max-width:1200px){
@@ -377,6 +450,10 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform: rotate(-47deg);}
   .car_list>li:last-child>p{
     width:23%;
   }
+  .footer_middle_left{flex-flow:row wrap; flex:3;}
+  .footer_bottom_right{flex:7;}
+  .service{flex:none;width:100%; margin-bottom:20px;}
+  .info{padding-left:10px;width:100%; flex:none;}
 }
 
 
@@ -408,6 +485,8 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform: rotate(-47deg);}
   .quick_nav>li{width:140px; height:140px;}
   .quick_nav>li>p{font-size:medium;}
   .swiper-pagination{display: none;}
+  .footer_middle_left{flex:3.5;}
+  .footer_middle_right{flex:6.5;}
 }
 
 /* 모바일 769이하 */
@@ -464,6 +543,29 @@ h1 #tgl_nav_btn.active li:nth-child(3){transform: rotate(-47deg);}
   .event_kia:hover .swiper-button-prev,.event_kia:hover .swiper-button-next,
   .channel_kia:hover .swiper-button-prev,.channel_kia:hover .swiper-button-next
   {display:block;}
+  .you_tube>.you_tube_link{width:100%; height: 56.27198124267292vw;}
+  .you_tube>.you_tube_txt{width:100%; height:auto; padding:58% 5% 5% 5%; background-color:#eee;;}
+  .you_tube>.you_tube_txt>h3,.you_tube>.you_tube_txt>p{text-align: center;}
+
+
+  .kia_news h4>a,.kia_news h4{font-size:medium;}
+  .news_notice>.kia_news,
+  .news_notice>.notice{width:100%;}
+  .news_notice>.notice{margin-top: 100px;}
+  .notice_txt>li{display: flex; flex-flow: row nowrap; justify-content: space-between;
+  align-items: center; width:100%;border:1px solid rgba(0,0,0,0.2) !important; 
+  border-bottom: none !important; padding-bottom:16px;}
+  .notice_txt>li:last-child{border-bottom:1px solid rgba(0,0,0,0.2) !important;}
+  .notice_txt>li>h4{padding-bottom:0;}
+
+  .footer_top_right{display:none;}
+  .footer_middle{display:none;}
+  .footer_bottom{flex-flow:column; padding:20px;}
+  .footer_bottom::after{content:'한국'; display: block; color: #fff; padding-left:40px; background:url('../images/korea.jpg') no-repeat; background-size:contain; order:2; margin-bottom:30px;}
+  .footer_bottom_left{order:3;}
+  .footer_bottom_right{order:1; flex-flow: row wrap; margin-bottom: 20px;}
+  .footer_bottom_right>p{width:50%;}
+  .footer_bottom_right>p{padding:20px 0; border-right:none;}
 }
 
 

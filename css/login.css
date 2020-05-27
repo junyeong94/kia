@@ -1,0 +1,19 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.wrap{border-top:5px solid #d70f26;}
+.content{width:400px;margin:0 auto; padding:20px 0;}
+.logo_box>img{width:100px;}
+hr{width:100%; height: 1px; background-color: rgba(0,0,0,0.2);}
+.login_form>li{list-style: square; margin-bottom: 10px;}
+
+
+form{display:flex; flex-flow:column nowrap; }
+form>input,form>button{margin:2px 0;border:1px solid rgba(0,0,0,0.2);padding:10px; margin-bottom: 10px;}
+form>button{font-weight:bold;font-size:medium;color:white;background-color:#d70f26; cursor: pointer; padding:14px;}
+form>button:hover{color:#d70f26;background-color:#fff; border:1px solid #d70f26;}
+.id_search{text-align:center;}
+.id_search>span{display: inline-block; padding:10px;color:#d70f26; cursor: pointer; transition: 0.3s;}
+.id_search>span:hover{background-color:#d70f26; color:#fff;}
+.join>p{text-align: center;}
+.join span{color: #d70f26; cursor: pointer;}
